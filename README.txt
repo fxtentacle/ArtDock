@@ -1,3 +1,6 @@
+ZIP download here: https://github.com/fxtentacle/ArtDock/archive/master.zip
+
+
 1. Install AutoHotKey: http://ahkscript.org/
 I use the 64bit version on my SP4.
 
