@@ -3,6 +3,7 @@
 ;    Requirement: AutoHotkey_L v1.1.04.01 or later
 ;
 ;  http://www.39kasen.sakura.ne.jp/rawinputcontroltest/
+;  updated Dec 2016 for Surface Pro 4 by Hajo Nils Krabbenhöft
 
 
 #SingleInstance force
