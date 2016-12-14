@@ -1,0 +1,207 @@
+﻿;############################### Window Settings ##############################
+
+; Background color of window.
+#Window:Color=Black
+; Default font color.
+#Window:FontColor=9B9B9B
+; Font color when button is pressed.
+#Window:ActiveFontColor=00C0FF
+
+; Specify Start-up window position by Left/Right/Top/Bottom. (alone or in combination)
+#Window:Pos=LeftTop
+; You can also specify window position by the coordinate.
+;#Window:X=0
+;#Window:Y=0
+
+; Window size (If not specified, window size will be set automatically.)
+;#Window:Width=125
+;#Window:Height=550
+; Margin
+;#Window:MarginLeft=0
+#Window:MarginTop=0
+;#Window:MarginRight=0
+#Window:MarginBottom=0
+
+; Window transparency: Full transparent 0 ~ 255 Opaque
+#Window:Transparent=255
+
+;############################## Controls settings #############################
+
+#ControlOffset:0, 0 ;----------------- Row 1 -------------------
+
+; Handle for moving the window. - Control-type: Handle
+#Control:Handle
+	Name=Handle
+	Pos=0, 0, 75, 75
+	Image1=img\AD_Windows75x75.bmp
+	Image2=img\AD_DownButton.bmp
+
+; Back
+#Control:MenuDock
+	Name=MenuDock
+	Pos=75, 0, 75, 75
+	Image1=img\AD_Back75x75.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 75 ;----------------- ROW 2 -------------------
+
+; HSlider - Tab
+#Control:HSlider
+	Name=Tab
+	Pos=0, 0, 150, 75
+	Step=10
+	;Left
+	Upkey={Ctrl Down}{s Down}{s Up}{Ctrl Up}
+	;Right
+	Downkey={Ctrl Down}{o Down}{o Up}{Ctrl Up}
+	TouchKey={Tab Down}{Tab Up}
+	Image1=img\AD_Tab150x75.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 75 ;----------------- ROW 3 -------------------
+
+; HSlider - Undo
+#Control:HSlider
+	Name=Undo
+	Pos=0, 0, 150, 75
+	Step=10
+	;Left
+	Upkey={Ctrl Down}{y Down}{y Up}{Ctrl Up}
+	;Right
+	Downkey={Ctrl Down}{z Down}{z Up}{Ctrl Up}
+	TouchKey={Ctrl Down}{z Down}{z Up}{Ctrl Up}
+	Image1=img\AD_Undo150x75.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 75 ;----------------- ROW 4 -------------------
+
+; Explorer
+#Control:Key
+	Name=Explorer
+	Pos=0, 0, 150, 70
+	DownKey=#e
+	Image1=img\AD_Explorer150x70.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 70 ;----------------- ROW 5 -------------------
+
+; Screen Cap
+#Control:VSlider
+	Name=ScreenCap
+	Pos=0, 0, 150, 70
+	Step=10
+	UpKey=
+	DownKey=
+	TouchCommand=C:\Windows\System32\SnippingTool.exe
+	Image1=img\AD_ScreenCap150x70.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 70 ;----------------- ROW 6 -------------------
+
+; Slider - MouseWheel
+#Control:VSlider
+	Name=Wheel
+	Pos=0, 0, 75, 120
+	Step=10
+	UpKey={WheelUp}
+	DownKey={WheelDown}
+	TouchKey={MButton}
+	Image1=img\AD_Wheel75x120.bmp
+	Image2=img\AD_DownButton.bmp
+
+; Right Mouse Button
+#Control:Key
+	Name=RMB
+	Pos=75, 0, 75, 120
+	DownKey={RButton Down}
+	UpKey={RButton Up}
+	Image1=img\AD_RightMouse75x120.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 120 ;----------------- ROW 7 -------------------
+
+; Shift
+#Control:Key
+	Name=Shift
+	Pos=0, 0, 150, 90
+	DownKey={Shift Down}
+	UpKey={Shift Up}
+	Image1=img\AD_Shift150x90.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 90 ;----------------- ROW 8 -------------------
+
+; Ctrl
+#Control:Key
+	Name=Ctrl
+	Pos=0, 0, 150, 90
+	DownKey={Ctrl Down}
+	UpKey={Ctrl Up}
+	Image1=img\AD_Ctrl150x90.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 90 ;----------------- ROW 9 -------------------
+
+; Alt
+#Control:Key
+	Name=Alt
+	Pos=0, 0, 150, 90
+	DownKey={Alt Down}
+	UpKey={Alt Up}
+	Image1=img\AD_Alt150x90.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 90 ;----------------- ROW 10 -------------------
+
+; Space key - Control type: Key
+#Control:Key
+	Name=Space
+	Pos=0, 0, 150, 90
+	DownKey={Space Down}
+	UpKey={Space Up}
+	Image1=img\AD_Space150x90.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 90 ;----------------- ROW 11 -------------------
+
+; VSlider - CopyPasteCut
+#Control:VSliderDelay
+	Name=CopyPasteCut
+	Pos=0, 0, 75, 120
+	Step=10
+	Upkey=^c
+	Downkey=^x
+	TouchKey=^v
+	Image1=img\AD_CopyCut75x120.bmp
+	Image2=img\AD_DownButton.bmp
+
+; VSlider - Esc Enter Del 
+#Control:VSliderDelay
+	Name=EscEnterDel
+	Pos=75, 0, 75, 120
+	Step=10
+	UpKey={Esc}
+	DownKey={Delete}
+	TouchKey={Enter}
+	Image1=img\AD_Entr75x120.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 120 ;----------------- ROW 12 -------------------
+
+; Select All
+#Control:Key
+	Name=CustomTool1
+	Pos=0, 0, 75, 75
+	DownKey={Ctrl Down}{a Down}
+	UpKey={a Up}{Ctrl Up}
+	Image1=img\AD_All75x75.bmp
+	Image2=img\AD_DownButton.bmp
+
+; Backspace
+#Control:Key
+	Name=Backspace
+	Pos=75, 0, 75, 75
+	DownKey={Backspace Down}
+	UpKey={Backspace Up}
+	Image1=img\AD_BackSpce75x75.bmp
+	Image2=img\AD_DownButton.bmp

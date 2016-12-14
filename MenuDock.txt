@@ -1,0 +1,98 @@
+﻿;############################### Window Settings ##############################
+
+; Background color of window.
+#Window:Color=Black
+; Default font color.
+#Window:FontColor=9B9B9B
+; Font color when button is pressed.
+#Window:ActiveFontColor=00C0FF
+
+; Specify Start-up window position by Left/Right/Top/Bottom. (alone or in combination)
+#Window:Pos=LeftTop
+; You can also specify window position by the coordinate.
+;#Window:X=0
+;#Window:Y=0
+
+; Window size (If not specified, window size will be set automatically.)
+;#Window:Width=125
+;#Window:Height=550
+; Margin
+;#Window:MarginLeft=0
+#Window:MarginTop=0
+;#Window:MarginRight=0
+#Window:MarginBottom=10
+
+; Window transparency: Full transparent 0 ~ 255 Opaque
+#Window:Transparent=255
+
+;############################## Controls settings #############################
+
+#ControlOffset:0, 0 ;----------------- Row 1 -------------------
+
+; Handle for moving the window. - Control-type: Handle
+#Control:Handle
+	Name=Handle
+	Pos=10, 0, 80, 75
+	Image1=img\AD_Handle.bmp
+	Image2=img\AD_DownButton.bmp
+
+; Close Button
+#Control:Close
+	Name=Close
+	Pos=100, 0, 80, 75
+	Image1=img\AD_Exit.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 80 ;----------------- ROW 2 -------------------
+
+; Photoshop Dock
+#Control:Dock
+	Name=PhotoShopDock
+	Pos=10, 0, 80, 80
+	Step=50
+	Image1=img\AD_Photoshop.bmp
+	Image2=img\AD_DownButton.bmp
+
+; SketchBook Pro Dock
+#Control:Dock
+	Name=SBPDock
+	Pos=100, 0, 80, 80
+	Image1=img\AD_SBP.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 90 ;----------------- ROW 3 -------------------
+
+; Maya Dock
+#Control:Dock
+	Name=MayaDock
+	Pos=10, 0, 80, 80
+	Image1=img\AD_Maya.bmp
+	Image2=img\AD_DownButton.bmp
+
+; Mudbox Dock
+#Control:Dock
+	Name=MudboxDock
+	Pos=100, 0, 80, 80
+	Image1=img\AD_Mudbox.bmp
+	Image2=img\AD_DownButton.bmp
+
+#ControlOffset:0, 90 ;----------------- ROW 4 -------------------
+
+; Generic Dock
+#Control:Dock
+	Name=GenericDock
+	Pos=10, 0, 80, 80
+	Image1=img\AD_Generic.bmp
+	Image2=img\AD_DownButton.bmp
+
+; ZBrush Dock
+#Control:Dock
+	Name=ZBrushDock
+	Pos=100, 0, 80, 80
+	Image1=img\AD_ZBrush.bmp
+	Image2=img\AD_DownButton.bmp
+
+
+
+
+
