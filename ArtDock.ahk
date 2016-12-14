@@ -748,7 +748,8 @@ WM_INPUT(wParam, lParam, msg, hwnd)
 	;	} RAWHID, *PRAWHID, *LPRAWHID;
 	;-------------------------------------------
 	
-	Loop, %RawData_RawDataCount% {
+	numBlocks := NumGet(RawInputData, cbSize-8, "UChar")
+	Loop, %numBlocks% {
 		current_offset := RawData_RawDataOffset + (A_Index - 1) * RawData_RawDataSplitSize
 	
 		raw_stat := NumGet(RawInputData, RawData_OffsetStat + current_offset, "UChar")
