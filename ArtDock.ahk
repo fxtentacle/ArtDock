@@ -770,6 +770,7 @@ WM_INPUT(wParam, lParam, msg, hwnd)
 			PostMessage, 0x1001, raw_stat, raw_x | (raw_y << 16),, ahk_id %GuiHwnd%
 		}
 	}
+	DllCall("DefWindowProc", "Ptr", hwnd, "UInt", msg, "Ptr", wParam, "UInt", lParam)
 	Return 0
 }
 
