@@ -1,5 +1,9 @@
 ZIP download here: https://github.com/fxtentacle/ArtDock/archive/master.zip
+
 If you listen to music while painting, I also have a super sophisticated 3D headphone enhancement app on Steam: http://store.steampowered.com/app/444970/
+
+
+== INSTALLATION == 
 
 1. Install AutoHotKey: http://ahkscript.org/
 I use the 64bit version on my SP4.
