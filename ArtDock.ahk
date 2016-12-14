@@ -287,12 +287,12 @@ CreateGui:
 		Else If (CtlMax
 		      && RegExMatch(readline, "^Pos=.*?(-?\d+).*?(-?\d+).*?(-?\d+).*?(-?\d+)", match))
 		{
-			Ctl%CtlMax%_X := match1 + base_x
-			Ctl%CtlMax%_y := match2 + base_y
-			Ctl%CtlMax%_W := match3
-			Ctl%CtlMax%_H := match4
-			Ctl%CtlMax%_X2 := match1 + match3 + base_x
-			Ctl%CtlMax%_Y2 := match2 + match4 + base_y
+			Ctl%CtlMax%_X := (match1 + base_x)*2
+			Ctl%CtlMax%_y := (match2 + base_y)*2
+			Ctl%CtlMax%_W := match3*2
+			Ctl%CtlMax%_H := match4*2
+			Ctl%CtlMax%_X2 := (match1 + match3 + base_x)*2
+			Ctl%CtlMax%_Y2 := (match2 + match4 + base_y)*2
 		}
 		; Other Control's parameters.
 		Else If (CtlMax && RegExMatch(readline, "^([^#]*?)=(.*)$", match)) {
